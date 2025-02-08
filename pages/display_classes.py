@@ -102,16 +102,17 @@ def get_courses(url, major, degree):
 
 url = st.session_state['url'][0]
 
-degree = str(st.session_state['degree'])
+degree = st.session_state['degree'][0]
 
 major_degree = degree.split(",")
 major = major_degree[0].strip()
-major.replace(" ", "-")
+major = major.replace(" ", "-")
 degree = major_degree[1].strip()
 
 csv_list = get_courses(url, major, degree)
 i = 0
 for file in csv_list:
+    name = file.split("-")[-1].split(".")[0]
     i += 1
     filepath = f"{file}"
     df = pd.read_csv(filepath)
@@ -120,6 +121,7 @@ for file in csv_list:
 
     reqs_df = pd.read_csv(filepath)
 
+    st.write(name)
     # Display editable checkbox column
     edited_df = st.data_editor(
         reqs_df,
@@ -170,7 +172,7 @@ for file in csv_list:
         # Sample array data
 
 
-        st.title("Percent of degree completed:")
+        st.write(f"**Percent of {name} completed:**")
 
         fig, ax = plt.subplots()
         colors = ["#A52A2A", "#660000"]  # Light red, blue, green, and orange
