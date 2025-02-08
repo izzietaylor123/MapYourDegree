@@ -1,5 +1,5 @@
 import './login.css';
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -17,15 +17,17 @@ function Login() {
           placeholder="Password" 
           name="password" 
           required 
-        />
-        <button type="submit" className="login-btn">
-          Login
-        </button>
-        <button type="button" className="create-account-btn">
-        <a href="/create-account">Create an Account</a>
-        </button>
-      </form>
-    </div>
+          />
+          <button type="submit" className="login-btn">
+            Login
+          </button>
+          <Link to="/create-account">
+            <button type="button" className="create-account-btn">
+              Create an Account
+            </button>
+          </Link>
+        </form>
+      </div>
   );
 }
 

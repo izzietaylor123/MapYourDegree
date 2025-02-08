@@ -1,4 +1,4 @@
-import '.CreatAccount.css'
+import './CreateAccount.css';
 function CreateAccount() {
     return (
       <div className="create-account-container">
