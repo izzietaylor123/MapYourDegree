@@ -1,68 +1,98 @@
-# import requests
-# from bs4 import BeautifulSoup
-# import sqlite3
+def get_courses(major, degree):
+    import requests
+    from bs4 import BeautifulSoup
+    import csv
 
-# # URL = "https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bacs/#programrequirementstext"
-# # text = requests.get(URL).text
-# # print(text)
+    # Step 1: Fetch the catalog page
+    url = f"https://catalog.northeastern.edu/undergraduate/computer-information-science/{major}/{degree}/#programrequirementstext"
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, "html.parser")
+    
+    # soup = BeautifulSoup(''.join(response.content), "html.parser")
+    h3s = soup.find_all("h3")
+    arr = soup.prettify().split('<h3>')
+    # Step 2: Find all tbody elements
 
+    # Find all tables with the class "sc_courselist"
+    tables = soup.find_all("table", class_="sc_courselist")
 
-# # Step 1: Fetch the page
-# URL = "https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bacs/#programrequirementstext"
-# headers = {"User-Agent": "Mozilla/5.0"}
-# response = requests.get(URL, headers=headers)
-# soup = BeautifulSoup(response.text, "html.parser")
+    all_h3_elements = []
 
-# # Step 2: Find course tables
-# cs_courses = []
-# program_requirements_section = soup.find(tableclass ="sc_courselist")
-# if program_requirements_section:
-#     course_rows = program_requirements_section.find_all("tr")  # Look for rows inside tables
-#     for row in course_rows:
-#         cols = row.find_all("td")  # Find columns in each row
-#         if len(cols) >= 2:  # Ensure there's enough data
-#             title = cols[0].text.strip()  # Course title/code
-#             credits = cols[-1].text.strip()  # Last column often has credit info
-#             description = "N/A"  # Descriptions may not be in tables
-#             cs_courses.append((title, description, credits))
+    for table in tables:
+        # Get all preceding siblings of the table
+        preceding_siblings = []
+        current_sibling = table.previous_sibling
+        while current_sibling:
+            if current_sibling.name:
+                preceding_siblings.append(current_sibling)
+            current_sibling = current_sibling.previous_sibling
 
-# # Step 3: Store in SQLite
-# conn = sqlite3.connect("nu_bacs_courses.db")
-# cursor = conn.cursor()
-# cursor.execute("""
-#     CREATE TABLE IF NOT EXISTS cs_courses (
-#         id INTEGER PRIMARY KEY AUTOINCREMENT,
-#         title TEXT,
-#         description TEXT,
-#         credits TEXT
-#     )
-# """)
-# cursor.executemany("INSERT INTO cs_courses (title, description, credits) VALUES (?, ?, ?)", cs_courses)
-# conn.commit()
-# conn.close()
+        # Reverse the list to maintain the correct order
+        preceding_siblings.reverse()
 
-# print(f"✅ Scraped and stored {len(cs_courses)} courses.")
+        # Extract h3 elements from the preceding siblings
+        h3_elements = [sibling for sibling in preceding_siblings if sibling.name == "h3"]
+        all_h3_elements.extend(h3_elements)
 
-import requests
-from bs4 import BeautifulSoup
+    # Print the text content of each h3 element
+    for h3 in all_h3_elements and part in arr:
+        print(h3.text.strip())
+        
+    # for part in arr:
+        # print(part)
+        soup_test = (BeautifulSoup(part, "html.parser"))
+        # print(soup_test.find('h3 tbody'))
+        tbody_elements = soup_test.find_all("tbody")
+        # print(tbody_elements)
 
-url = "https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bacs/#programrequirementstext"  # Replace with the actual URL
-response = requests.get(url)
-soup = BeautifulSoup(response.content, "html.parser")
+        # Storage for courses
+        courses = []  # (course_code, course_name, course_hours, requirement_group, is_optional)
 
-# Find the parent div
-parent_div = soup.find("div", id="programrequirementstextcontainer")
+        current_group = "General Requirements"  # Default group
+        is_optional = False
 
-# Find all tables with the class 'sc_courselist' within the parent div
-tables = parent_div.find_all("table", class_="sc_courselist")
+        for tbody in tbody_elements:
+            rows = tbody.find_all("tr")
 
-# Iterate through the tables
+            for row in rows:
+                # Check if row contains a requirement group header
+                # comment_td = row.find("td", colspan="2")
+                # print(f"comment: {comment_td}")
+                # if comment_td:
+                requirement_group = row.find("span", class_="courselistcomment areaheader")
 
-for table in tables:
-    rows = table.find_all("tr", class_="even" or "odd")
-    for row in rows:
-        course_id = row.find("td", class_="codecol").get_text()
-        course_name = row.find("td").get_text()
-        course_hours = row.find("td", class_="hourscol").get_text()
-        print(f"course id: {course_id}, course name: {course_name}, hours = {course_hours}")
-        print()
+                if requirement_group:
+                    current_group = requirement_group.text.strip()
+                comment_span = row.find("span", class_="courselistcomment")
+                if comment_span:
+                    is_optional = "Complete" in comment_span.text
+                # Skip section headers
+                if "areaheader" in row.get("class", []):
+                    continue
+
+                # Extract course information
+                td_elements = row.find_all("td")
+                if len(td_elements) >= 3:
+                    course_code = td_elements[0].text.strip()
+                    if "and" in course_code:
+                        course_code = course_code.replace('\n', '')
+                        course_code = ' '.join(course_code.split())
+                    course_name = td_elements[1].text.strip()
+                    if "and" in course_name:
+                        course_name = course_name.replace('\n', '')
+                        course_name = ' '.join(course_name.split())
+                    course_hours = td_elements[2].text.strip()
+
+                    courses.append([course_code, course_name, course_hours, current_group, is_optional])
+
+        # Step 3: Save to CSV
+        csv_filename = "northeastern_courses.csv"
+        with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
+            csv_writer = csv.writer(csv_file)
+            csv_writer.writerow(["Course Code", "Course Name", "Course Hours", "Requirement Group", "Is Optional"])
+            csv_writer.writerows(courses)
+
+        print(f"✅ Data written to {csv_filename}")
+
+get_courses('computer-science', 'bacs')
+
