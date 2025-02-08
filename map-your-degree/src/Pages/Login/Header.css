@@ -1,5 +1,11 @@
-h1 {
-    font-size: 30px;
-    color: #000000;
-    margin-bottom: 20px;
-  }
+.header-container {
+  display: flex;
+  align-content: space-between;
+}
+
+.header-text {
+  top: 10px;  
+  left: 20px; 
+  font-size: 8px;
+  color: #000000;
+}

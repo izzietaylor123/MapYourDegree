@@ -12,10 +12,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #ffe297aa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #ffc16aaa);
 }
 
 @keyframes logo-spin {
@@ -40,3 +40,28 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Header Wrapper - Fixes Header at the Top */
+.header-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255); 
+  z-index: 1000; 
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+.content {
+  margin-top: 100px; 
+}
+
+.logo-wrapper {
+  position: fixed; 
+  top: 20px; 
+  right: 20px; 
+  z-index: 1000; 
+}
+

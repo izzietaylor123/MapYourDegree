@@ -1,0 +1,186 @@
+[
+{
+    "Course Code": "CS1200",
+    "Course Name": "First Year Seminar",
+    "Course Hours": 1,
+    "Requirement Group": "Computer Science Overview",
+    "Number Required": "All",
+    "Enrolled": "True"
+  },
+    {
+      "Course Code": "CS 1800 and CS 1802",
+      "Course Name": "Discrete Structures and Seminar for CS 1800",
+      "Course Hours": 5,
+      "Requirement Group": "Computer Science Fundamental Courses",
+      "Number Required": "All",
+      "Enrolled": "TRUE"
+    },
+    {
+      "Course Code": "CS 2500 and CS 2501",
+      "Course Name": "Fundamentals of Computer Science 1 and Lab for CS 2500",
+      "Course Hours": 5,
+      "Requirement Group": "Computer Science Fundamental Courses",
+      "Number Required": "All",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "CS 2510 and CS 2511",
+      "Course Name": "Fundamentals of Computer Science 2 and Lab for CS 2510",
+      "Course Hours": 5,
+      "Requirement Group": "Computer Science Fundamental Courses",
+      "Number Required": "All",
+      "Enrolled": "TRUE"
+    },
+    {
+      "Course Code": "CS 3000",
+      "Course Name": "Algorithms and Data",
+      "Course Hours": 4,
+      "Requirement Group": "Computer Science Required Courses",
+      "Number Required": "All",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "CS 3500 and CS 3501",
+      "Course Name": "Object-Oriented Design and Lab for CS 3500",
+      "Course Hours": 5,
+      "Requirement Group": "Computer Science Required Courses",
+      "Number Required": "All",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "CS 3650",
+      "Course Name": "Computer Systems",
+      "Course Hours": 4,
+      "Requirement Group": "Computer Science Required Courses",
+      "Number Required": "All",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "CS 3800",
+      "Course Name": "Theory of Computation",
+      "Course Hours": 4,
+      "Requirement Group": "Computer Science Required Courses",
+      "Number Required": "All",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "CS 4500",
+      "Course Name": "Software Development",
+      "Course Hours": 4,
+      "Requirement Group": "Computer Science Required Courses",
+      "Number Required": "All",
+      "Enrolled": "TRUE"
+    },
+    {
+      "Course Code": "CS 4530",
+      "Course Name": "Fundamentals of Software Engineering",
+      "Course Hours": "",
+      "Requirement Group": "Computer Science Required Courses",
+      "Number Required": "All",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "DS 3000",
+      "Course Name": "Foundations of Data Science",
+      "Course Hours": 4,
+      "Requirement Group": "Computer Science Required Courses",
+      "Number Required": "All",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "CY 2550",
+      "Course Name": "Foundations of Cybersecurity",
+      "Course Hours": "",
+      "Requirement Group": "Security Required Course",
+      "Number Required": "one",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "CY 3740",
+      "Course Name": "Systems Security",
+      "Course Hours": "",
+      "Requirement Group": "Security Required Course",
+      "Number Required": "one",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "CY 4740",
+      "Course Name": "Network Security",
+      "Course Hours": "",
+      "Requirement Group": "Security Required Course",
+      "Number Required": "one",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "COMM 1112",
+      "Course Name": "Public Speaking",
+      "Course Hours": "",
+      "Requirement Group": "Presentation Requirement",
+      "Number Required": "one",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "COMM 1113",
+      "Course Name": "Business and Professional Speaking",
+      "Course Hours": "",
+      "Requirement Group": "Presentation Requirement",
+      "Number Required": "one",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "COMM 1210",
+      "Course Name": "Persuasion and Rhetoric",
+      "Course Hours": "",
+      "Requirement Group": "Presentation Requirement",
+      "Number Required": "one",
+      "Enrolled": "TRUE"
+    },
+    {
+      "Course Code": "COMM 1511",
+      "Course Name": "Communication and Storytelling",
+      "Course Hours": "",
+      "Requirement Group": "Presentation Requirement",
+      "Number Required": "one",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "THTR 1125",
+      "Course Name": "Improvisation",
+      "Course Hours": "",
+      "Requirement Group": "Presentation Requirement",
+      "Number Required": "one",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "THTR 1130",
+      "Course Name": "Introduction to Acting",
+      "Course Hours": "",
+      "Requirement Group": "Presentation Requirement",
+      "Number Required": "one",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "THTR 1180",
+      "Course Name": "Dynamic Presence: Theatre Training for Effective Interpersonal Interactions",
+      "Course Hours": "",
+      "Requirement Group": "Presentation Requirement",
+      "Number Required": "one",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "THTR 2345",
+      "Course Name": "Acting for the Camera",
+      "Course Hours": "",
+      "Requirement Group": "Presentation Requirement",
+      "Number Required": "one",
+      "Enrolled": "FALSE"
+    },
+    {
+      "Course Code": "CS1200",
+      "Course Name": "First Year Seminar",
+      "Course Hours": 1,
+      "Requirement Group": "Computer Science Overview",
+      "Number Required": "All",
+      "Enrolled": "True"
+    }
+]
