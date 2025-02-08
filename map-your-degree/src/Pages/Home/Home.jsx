@@ -1,17 +1,13 @@
 import './Home.css'
-import Header from "./Header";
 
-export default function Home() {
-	return (
-		<div>
-			<Header />
-		</div>
-	);
+function HomePage() {
+    return (
+        <>
+        <div className="home-page">
+        <h1 className="home-header">Map Your Degree</h1>
+        </div>
+        </>
+    )
 }
 
-// Header.tsx
-export function Header() {
-	return (
-		<h2>Map Your Degree</h2>
-	);
-}
+export default HomePage;
