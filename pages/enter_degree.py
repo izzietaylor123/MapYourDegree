@@ -27,7 +27,8 @@ def get_title(url):
 st.title("See Your Degree Track!")
 st.write("Please input your major url to continue.")
 
-url = st.text_input("Degree URL")
+url = st.text_input("Degree URL").strip()
+
 if url:
 
     degree = get_title(url)

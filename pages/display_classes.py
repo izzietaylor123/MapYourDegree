@@ -100,7 +100,7 @@ def get_courses(url, major, degree):
     return csv_list
 
 
-url = st.session_state['url']
+url = st.session_state['url'][0]
 
 degree = str(st.session_state['degree'])
 
