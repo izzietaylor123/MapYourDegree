@@ -26,8 +26,15 @@ function Login() {
               Create an Account
             </button>
           </Link>
+          <Link to="/home" className="go-home-btn">
+          <button type="button">
+            Go to Homepage
+          </button>
+        </Link>
         </form>
       </div>
+
+      
   );
 }
 

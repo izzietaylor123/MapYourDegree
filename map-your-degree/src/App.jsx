@@ -9,12 +9,14 @@ import CreateAccount from './Pages/CreateAccount/CreateAccount.jsx';
 function App() {
   return (
     <>
-    <div className="logo-wrapper">
-    <Logo /> 
-    </div>
+    
       <div className="header-wrapper">
         <Header />
       </div>
+
+      <div className="logo-wrapper">
+    <Logo /> 
+    </div>
 
       <div className="content">
         <Router>
