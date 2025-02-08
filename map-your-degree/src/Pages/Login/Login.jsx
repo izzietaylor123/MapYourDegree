@@ -18,19 +18,16 @@ function Login() {
           name="password" 
           required 
           />
+          <Link to="/home" >
           <button type="submit" className="login-btn">
             Login
           </button>
+          </Link>
           <Link to="/create-account">
             <button type="button" className="create-account-btn">
               Create an Account
             </button>
-          </Link>
-          <Link to="/home" className="go-home-btn">
-          <button type="button">
-            Go to Homepage
-          </button>
-        </Link>
+           </Link>
         </form>
       </div>
 

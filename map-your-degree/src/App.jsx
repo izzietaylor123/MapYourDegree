@@ -5,6 +5,7 @@ import Logo from './Pages/Login/Logo.jsx'
 import Header from './Pages/Login/Header'
 import Login from './Pages/Login/Login.jsx'
 import CreateAccount from './Pages/CreateAccount/CreateAccount.jsx';
+import Home from './Pages/Home/Home.jsx'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/create-account" element={<CreateAccount />} />
+            <Route path="/home" element={<Home />} />
           </Routes>
         </Router>
       </div>
