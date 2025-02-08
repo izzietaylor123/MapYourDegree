@@ -1,0 +1,16 @@
+ .degree-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  .degree-table th, .degree-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .degree-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
