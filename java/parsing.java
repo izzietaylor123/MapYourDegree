@@ -24,7 +24,7 @@ class CSVParser {
 
     return records;
   }
-}
+
 
   @Override
   public String toString() {
