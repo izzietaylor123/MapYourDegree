@@ -57,7 +57,12 @@ parent_div = soup.find("div", id="programrequirementstextcontainer")
 tables = parent_div.find_all("table", class_="sc_courselist")
 
 # Iterate through the tables
+
 for table in tables:
-    # Process each table here
-    print(table.text)
-    print()
+    rows = table.find_all("tr", class_="even" or "odd")
+    for row in rows:
+        course_id = row.find("td", class_="codecol").get_text()
+        course_name = row.find("td").get_text()
+        course_hours = row.find("td", class_="hourscol").get_text()
+        print(f"course id: {course_id}, course name: {course_name}, hours = {course_hours}")
+        print()
