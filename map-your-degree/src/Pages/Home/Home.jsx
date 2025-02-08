@@ -6,8 +6,7 @@ function Home() {
       <div className="degree-container">
         <h2>Choose Your Degree Plan</h2>
         <form>
-          <input type="major" placeholder="Major" />
-          <input type="concentration" placeholder="Concentration" />
+          <input type="major-link" placeholder="Enter Major URL" />
           <Link to="/degree-results" >
           <button type="submit">Submit</button>
           </Link>
