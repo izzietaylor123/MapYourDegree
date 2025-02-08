@@ -86,7 +86,7 @@ def get_courses(url, major, degree):
         print(f"✅ Data written to {csv_filename}")
 
 
-get_courses('https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bacs/#programrequirementstext', 'Computer_Science', 'BACS')
+get_courses('https://catalog.northeastern.edu/undergraduate/business/business-administration-law-bs/#programrequirementstext', 'Business_admin_and_law', 'BS')
 # filepath = "/Users/izzietaylor/Documents/spring 2025/hackbeanpot/Computer_Science-BACS-Supporting Courses-1.csv"
 # df = pandas.read_csv(filepath)
 
