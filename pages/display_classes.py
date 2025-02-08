@@ -102,7 +102,7 @@ def get_courses(url, major, degree):
 
 url = st.session_state['url']
 
-degree = st.session_state['degree']
+degree = str(st.session_state['degree'])
 
 major_degree = degree.split(",")
 major = major_degree[0].strip()

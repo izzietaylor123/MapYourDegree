@@ -37,4 +37,4 @@ if url:
     if st.button("Yes!"):
         st.session_state['degree'] = degree,
         st.session_state['url'] = url,
-        st.switch_page("pages.display_classes.py")
+        st.switch_page("pages/display_classes.py")
