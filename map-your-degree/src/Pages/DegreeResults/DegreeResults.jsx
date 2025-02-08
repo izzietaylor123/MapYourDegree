@@ -1,37 +1,46 @@
 import './DegreeResults.css';
+import { useState, useEffect } from "react";
 
 function DegreeResults() {
-<div>
-      <h2>Degree Programs</h2>
-      <input 
-        type="text" 
-        placeholder="Enter Degree Page URL" 
-        value={url} 
-        onChange={(e) => setUrl(e.target.value)}
-      />
-      <button onClick={fetchData}>Fetch Degrees</button>
+  const [data, setData] = useState([]);
 
-      {data.length > 0 ? (
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Description</th>
+  useEffect(() => {
+    fetch("../sample.json") // Adjust path if needed
+      .then(response => response.json())
+      .then(json => setData(json))
+      .catch(error => console.error("Error loading JSON:", error));
+  }, []);
+
+  return (
+    <div>
+      <h2>Degree Courses</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Course Hours</th>
+            <th>Requirement Group</th>
+            <th>Number Required</th>
+            <th>Enrolled</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((course, index) => (
+            <tr key={index}>
+              <td>{course["Course Code"]}</td>
+              <td>{course["Course Name"]}</td>
+              <td>{course["Course Hours"]}</td>
+              <td>{course["Requirement Group"]}</td>
+              <td>{course["Number Required"]}</td>
+              <td>{course["Enrolled"]}</td>
             </tr>
-          </thead>
-          <tbody>
-            {data.map((degree, index) => (
-              <tr key={index}>
-                <td>{degree.title}</td>
-                <td>{degree.description}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      ) : (
-        <p>No data yet. Enter a URL and click "Fetch Degrees".</p>
-      )}
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
-}
+
+export default DegreeResults;
+
