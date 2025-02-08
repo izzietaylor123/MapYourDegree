@@ -1,0 +1,15 @@
+Course Code,Course Name,Course Hours,Requirement Group,Number Required
+CS 4700,Network Fundamentals,4,Default,All
+or CS 4730,Distributed Systems,,Default,All
+CY 3740,Systems Security,,Default1,one
+CY 4740,Network Security,,Default1,one
+CS 3520,Programming in C++,,Default11,two
+CS 4300,Computer Graphics,,Default11,two
+CS 4360,Non-Interactive Computer Graphics,,Default11,two
+CS 4610,Robotic Science and Systems,,Default11,two
+CS 4700,Network Fundamentals,,Default11,two
+CS 4710,Mobile and Wireless Systems,,Default11,two
+CS 4730,Distributed Systems,,Default11,two
+CY 3740,Systems Security,,Default11,two
+CY 4740,Network Security,,Default11,two
+CY 4760,Security of Wireless and Mobile Systems,,Default11,two
