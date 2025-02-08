@@ -7,16 +7,21 @@ import CreateAccount from './Pages/CreateAccount/CreateAccount.jsx';
 
 function App() {
   return (
-    <> 
-    <Header />
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/create-account" element={<CreateAccount />} />
-      </Routes>
-    </Router>
+    <>
+      <div className="header-wrapper">
+        <Header />
+      </div>
+
+      <div className="content">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/create-account" element={<CreateAccount />} />
+          </Routes>
+        </Router>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
