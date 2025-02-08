@@ -122,7 +122,7 @@ def get_courses(url, major, degree):
 
 
 st.title("See Your Degree Track!")
-st.write("Please input your major url to continue.")
+st.write("Please input your major program requirements url to continue.")
 
 url = st.text_input("Degree URL")
 if url:

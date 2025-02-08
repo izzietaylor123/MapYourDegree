@@ -1,0 +1,37 @@
+Course Code,Course Name,Course Hours,Requirement Group,Number Required,Enrolled
+CS 1200,First Year Seminar,1,Computer Science Overview,All,False
+CS 1210,Professional Development for Khoury Co-op,1,Computer Science Overview,All,False
+CS 1800and CS 1802,Discrete Structuresand Seminar for CS 1800,5,Computer Science Fundamental Courses,All,False
+CS 2500and CS 2501,Fundamentals of Computer Science 1and Lab for CS 2500,5,Computer Science Fundamental Courses,All,False
+CS 2510and CS 2511,Fundamentals of Computer Science 2and Lab for CS 2510,5,Computer Science Fundamental Courses,All,False
+CS 3000,Algorithms and Data,4,Computer Science Required Courses,All,False
+CS 3500and CS 3501,Object-Oriented Designand Lab for CS 3500,5,Computer Science Required Courses,All,False
+CS 3650,Computer Systems,4,Computer Science Required Courses,All,False
+CS 3800,Theory of Computation,4,Computer Science Required Courses,All,False
+CS 4700,Network Fundamentals,4,Computer Science Required Courses,All,False
+or CS 4730,Distributed Systems,,Computer Science Required Courses,All,False
+COMM 1112,Public Speaking,,Presentation Requirement,one,False
+COMM 1113,Business and Professional Speaking,,Presentation Requirement,one,False
+COMM 1210,Persuasion and Rhetoric,,Presentation Requirement,one,False
+COMM 1511,Communication and Storytelling,,Presentation Requirement,one,False
+THTR 1125,Improvisation,,Presentation Requirement,one,False
+THTR 1130,Introduction to Acting,,Presentation Requirement,one,False
+THTR 1180,Dynamic Presence: Theatre Training for Effective Interpersonal Interactions,,Presentation Requirement,one,False
+THTR 2345,Acting for the Camera,,Presentation Requirement,one,False
+CY 2550,Foundations of Cybersecurity,4,Cybersecurity Required Courses,one,False
+CY 3740,Systems Security,4,Cybersecurity Required Courses,one,False
+CY 4740,Network Security,4,Cybersecurity Required Courses,one,False
+CY 4770,Cryptography,4,Cybersecurity Required Courses,one,False
+CY 4930,Cybersecurity Capstone,4,Cybersecurity Required Courses,one,False
+COMM 2551,Free Speech in Cyberspace,,Cybersecurity and Social Issues Elective List,one,False
+CRIM 2340,Corporate Security: Securing the Private Sector,,Cybersecurity and Social Issues Elective List,one,False
+CRIM 4040,Crime Prevention,,Cybersecurity and Social Issues Elective List,one,False
+LPSC 1101,Introduction to Law,,Cybersecurity and Social Issues Elective List,one,False
+LPSC 2301,"Introduction to Law, Policy, and Society",,Cybersecurity and Social Issues Elective List,one,False
+LPSC 3303,Topics in Law and Public Policy,,Cybersecurity and Social Issues Elective List,one,False
+POLS 2390,"Science, Technology, and Public Policy",,Cybersecurity and Social Issues Elective List,one,False
+POLS 3307,Public Policy and Administration,,Cybersecurity and Social Issues Elective List,one,False
+POLS 3324,Law and Society,,Cybersecurity and Social Issues Elective List,one,False
+POLS 3406,International Law,,Cybersecurity and Social Issues Elective List,one,False
+POLS 3420,U.S. National Security Policy,,Cybersecurity and Social Issues Elective List,one,False
+POLS 3423,Terrorism and Counterterrorism,,Cybersecurity and Social Issues Elective List,one,False
