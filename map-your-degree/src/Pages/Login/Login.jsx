@@ -1,7 +1,7 @@
 import './login.css';
 //import { Link } from "react-router-dom";
 
-const Login = () => {
+function Login() {
   return (
     <div className="login-container">
       <h2>Login</h2>
