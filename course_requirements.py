@@ -73,7 +73,7 @@ def get_courses(url, major, degree):
                 if len(td_elements) > 2:
                     course_hours = td_elements[2].text.strip()
 
-                courses.append([course_code, course_name, course_hours, current_group, num_required])
+                courses.append([course_code, course_name, course_hours, current_group, num_required, False])
         title = "Core"
         if all_h3_elements:
             title = all_h3_elements[-1].text
@@ -81,13 +81,13 @@ def get_courses(url, major, degree):
         csv_filename = f"{major}-{degree}-{title}.csv" 
         with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
             csv_writer = csv.writer(csv_file)
-            csv_writer.writerow(["Course Code", "Course Name", "Course Hours", "Requirement Group", "Number Required"])
+            csv_writer.writerow(["Course Code", "Course Name", "Course Hours", "Requirement Group", "Number Required", "Enrolled"])
             csv_writer.writerows(courses)
         print(f"✅ Data written to {csv_filename}")
 
 
 get_courses('https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bacs/#programrequirementstext', 'Computer_Science', 'BACS')
-filepath = "/Users/izzietaylor/Documents/spring 2025/hackbeanpot/Computer_Science-BACS-Supporting Courses-1.csv"
-df = pandas.read_csv(filepath)
+# filepath = "/Users/izzietaylor/Documents/spring 2025/hackbeanpot/Computer_Science-BACS-Supporting Courses-1.csv"
+# df = pandas.read_csv(filepath)
 
-print(df)
+# print(df)
