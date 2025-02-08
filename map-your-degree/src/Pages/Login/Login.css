@@ -1,4 +1,19 @@
-/* Reset some default styling */
+
+.login-page {
+  width: 100%;
+  height: 100%;
+  position: relative; 
+}
+
+.website-header {
+  font-size: 30px;
+  color: #000000; 
+  position: fixed;
+  margin-right: 400px;
+  margin-bottom: 200px;
+  font-weight: bold;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,20 +31,13 @@
   
   /* Main container */
   .login-container {
-    background: #fff;
+    background: #ffffff;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
     text-align: center;
-  }
-
-  .website-header {
-    font-size: 50px;
-    color: #000000; 
-    margin-bottom: 30px;
-    font-weight: bold;
   }
   
   h2 {
