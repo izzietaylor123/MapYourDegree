@@ -17,7 +17,7 @@ def get_courses(major, degree):
     tables = soup.find_all("table", class_="sc_courselist")
 
     all_h3_elements = []
-
+    num = 0
     for table in tables:
         # Get all preceding siblings of the table
         preceding_siblings = []
@@ -65,17 +65,17 @@ def get_courses(major, degree):
                 course_hours = td_elements[2].text.strip()
 
                 courses.append([course_code, course_name, course_hours, current_group, is_optional])
-            title = "Core"
-            if all_h3_elements:
-                title = all_h3_elements[0].text
-            # Step 3: Save to CSV
-            csv_filename = f"{major}-{degree}-{title}.csv"
-            with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
-                csv_writer = csv.writer(csv_file)
-                csv_writer.writerow(["Course Code", "Course Name", "Course Hours", "Requirement Group", "Is Optional"])
-                csv_writer.writerows(courses)
-
-            print(f"✅ Data written to {csv_filename}")
+        title = "Core"
+        if all_h3_elements:
+            title = all_h3_elements[-1].text
+        # Step 3: Save to CSV
+        csv_filename = f"{major}-{degree}-{title}-{num}.csv"
+        with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
+            csv_writer = csv.writer(csv_file)
+            csv_writer.writerow(["Course Code", "Course Name", "Course Hours", "Requirement Group", "Is Optional"])
+            csv_writer.writerows(courses)
+        num+=1
+        print(f"✅ Data written to {csv_filename}")
 
     # # Print the text content of each h3 element
     # for h3 in all_h3_elements and part in arr:
