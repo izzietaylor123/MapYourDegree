@@ -1,0 +1,13 @@
+Course Code,Course Name,Course Hours,Requirement Group,Number Required
+CS 2800,Logic and Computation,4,Default,All
+CS 4400,Programming Languages,4,Default,All
+CS 4700,Network Fundamentals,4,Default,All
+or CS 4730,Distributed Systems,,Default,All
+CS 3520,Programming in C++,,Default1,one
+CS 4410,Compilers,,Default1,one
+CS 4520,Mobile Application Development,,Default1,one
+CS 4550,Web Development,,Default1,one
+CS 4700,Network Fundamentals,,Default1,one
+CS 4730,Distributed Systems,,Default1,one
+CS 4820,Computer-Aided Reasoning,,Default1,one
+CS 4830,"System Specification, Verification, and Synthesis",,Default1,one

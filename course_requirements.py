@@ -1,10 +1,10 @@
-def get_courses(major, degree):
+def get_courses(url, major, degree):
     import requests
     from bs4 import BeautifulSoup
     import csv
 
     # Step 1: Fetch the catalog page
-    url = f"https://catalog.northeastern.edu/undergraduate/computer-information-science/{major}/{degree}/#programrequirementstext"
+    url = f"{url}"
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
     
@@ -19,6 +19,8 @@ def get_courses(major, degree):
     all_h3_elements = []
     num = 0
     for table in tables:
+        current_group = "Default"
+        num_required = "All"
         # Get all preceding siblings of the table
         preceding_siblings = []
         current_sibling = table.previous_sibling
@@ -31,7 +33,7 @@ def get_courses(major, degree):
         preceding_siblings.reverse()
 
         # Extract h3 elements from the preceding siblings
-        h3_elements = [sibling for sibling in preceding_siblings if sibling.name == "h3"]
+        h3_elements = [sibling for sibling in preceding_siblings if (sibling.name == "h3" or sibling.name == "h2")]
         all_h3_elements.extend(h3_elements)
         rows = table.find_all("tr")
         courses = []
@@ -46,14 +48,20 @@ def get_courses(major, degree):
                 current_group = requirement_group.text.strip()
             comment_span = row.find("span", class_="courselistcomment")
             if comment_span:
-                is_optional = "Complete" in comment_span.text
+                if ("Complete" in comment_span.text):
+                    index = comment_span.text.split(" ").index("Complete")
+                    num_required = comment_span.text.split(" ")[index+1]
+                    if "Default" in current_group:
+                        current_group = current_group + "1"
             # Skip section headers
             if "areaheader" in row.get("class", []):
                 continue
 
             # Extract course information
             td_elements = row.find_all("td")
-            if len(td_elements) >= 3:
+            if (len(td_elements) >= 3 or (len(td_elements) == 2 and "or" in td_elements[0].text)):
+
+                # if "areasubheader" in td_elements[0].get('class'):
                 course_code = td_elements[0].text.strip()
                 if "and" in course_code:
                     course_code = course_code.replace('\n', '')
@@ -62,9 +70,11 @@ def get_courses(major, degree):
                 if "and" in course_name:
                     course_name = course_name.replace('\n', '')
                     course_name = ' '.join(course_name.split())
-                course_hours = td_elements[2].text.strip()
+                course_hours = ""
+                if len(td_elements) > 2:
+                    course_hours = td_elements[2].text.strip()
 
-                courses.append([course_code, course_name, course_hours, current_group, is_optional])
+                courses.append([course_code, course_name, course_hours, current_group, num_required])
         title = "Core"
         if all_h3_elements:
             title = all_h3_elements[-1].text
@@ -72,7 +82,7 @@ def get_courses(major, degree):
         csv_filename = f"{major}-{degree}-{title}-{num}.csv"
         with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
             csv_writer = csv.writer(csv_file)
-            csv_writer.writerow(["Course Code", "Course Name", "Course Hours", "Requirement Group", "Is Optional"])
+            csv_writer.writerow(["Course Code", "Course Name", "Course Hours", "Requirement Group", "Number Required"])
             csv_writer.writerows(courses)
         num+=1
         print(f"✅ Data written to {csv_filename}")
@@ -137,5 +147,5 @@ def get_courses(major, degree):
 
     #     print(f"✅ Data written to {csv_filename}")
 
-get_courses('computer-science', 'bacs')
+get_courses('https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bacs/#programrequirementstext', 'Computer_Science', 'BACS')
 
