@@ -6,7 +6,6 @@ function Home() {
         <form>
           <input type="major" placeholder="Major" />
           <input type="concentration" placeholder="Concentration" />
-          <input type="minor" placeholder="Minor" />
           <button type="submit">Submit</button>
         </form>
       </div>
