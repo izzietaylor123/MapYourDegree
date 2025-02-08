@@ -121,7 +121,7 @@ def get_courses(url, major, degree):
     return csv_list
 
 
-st.title("See your degree track!")
+st.title("See Your Degree Track!")
 st.write("Please input your major url to continue.")
 
 url = st.text_input("Degree URL")
