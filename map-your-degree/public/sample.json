@@ -1,0 +1,18 @@
+[
+{
+    "Course Code": "CS1200",
+    "Course Name": "First Year Seminar",
+    "Course Hours": 1,
+    "Requirement Group": "Computer Science Overview",
+    "Number Required": "All",
+    "Enrolled": "True"
+  },
+  {
+    "Course Code": "CS 1800and CS 1802",
+    "Course Name": "Discrete Structuresand Seminar for CS 1800",
+    "Course Hours": 5,
+    "Requirement Group": "Computer Science Fundamental Courses",
+    "Number Required": "All",
+    "Enrolled": "True"
+  }
+]

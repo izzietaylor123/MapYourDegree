@@ -1,4 +1,6 @@
 import './Home.css';
+import { Link } from "react-router-dom";
+
 function Home() {
     return (
       <div className="degree-container">
@@ -6,7 +8,9 @@ function Home() {
         <form>
           <input type="major" placeholder="Major" />
           <input type="concentration" placeholder="Concentration" />
+          <Link to="/degree-results" >
           <button type="submit">Submit</button>
+          </Link>
         </form>
       </div>
     );
