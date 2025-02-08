@@ -8,7 +8,7 @@ st.markdown(
         font-weight: bold;
         text-align: center;
         color: #800000;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Indie Flower', cursive;
     }
     
     .button-container {
