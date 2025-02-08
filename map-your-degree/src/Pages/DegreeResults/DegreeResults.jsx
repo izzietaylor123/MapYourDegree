@@ -12,7 +12,7 @@ function DegreeResults() {
   }, []);
 
   return (
-    <div>
+    <div className="degree-container">
       <h2>Degree Courses</h2>
       <table border="1">
         <thead>
