@@ -13,8 +13,12 @@ def parse_number(word):
     return word_to_number.get(word.lower(), "Invalid number")
 
 
-st.title("My First Streamlit App")
+st.title("See your degree track!")
 st.write("Hello, world! This is a simple Streamlit app.")
+
+url = st.text_input("Degree URL")
+
+
 
 filepath = "sample.csv"
 df = pd.read_csv(filepath)
