@@ -60,7 +60,8 @@ def get_courses(url, major, degree):
                 })
 
     title = all_h3_elements[-1].text if all_h3_elements else "Core"
-    json_filename = f"{major}-{degree}-{title}.json"
+    json_filename = f"public/{major}-{degree}-{title}.json"
+
 
     with open(json_filename, "w", encoding="utf-8") as json_file:
         json.dump(courses, json_file, indent=4)

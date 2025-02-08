@@ -5,7 +5,7 @@ function DegreeResults() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("../courses.json") // Adjust path if needed
+    fetch("../Business_admin_and_law-BS-Core.json") // Change to match your JSON filename
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.error("Error loading JSON:", error));
