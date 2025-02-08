@@ -1,5 +1,5 @@
 import './Home.css';
-function Choose_degree() {
+function Home() {
     return (
       <div className="degree-container">
         <h2>Choose your degree plan</h2>
@@ -13,4 +13,4 @@ function Choose_degree() {
     );
   }
   
-  export default CreateAccount;
+  export default Home;
