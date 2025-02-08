@@ -122,7 +122,7 @@ def get_courses(url, major, degree):
 
 
 st.title("See your degree track!")
-st.write("Hello, world! This is a simple Streamlit app.")
+st.write("Please input your major url to continue.")
 
 url = st.text_input("Degree URL")
 if url:
