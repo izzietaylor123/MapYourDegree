@@ -1,7 +1,17 @@
 .header-container {
-  position: absolute;
+  display: flex;
+  align-content: space-between;
+}
+
+.header-text {
   top: 10px;  
   left: 20px; 
   font-size: 8px;
   color: #000000;
+}
+
+.logo {
+  top: 10px;
+  right: 20px;
+  height: 8px;  /* Adjust the size as needed */
 }
