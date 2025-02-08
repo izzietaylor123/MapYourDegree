@@ -6,7 +6,7 @@
   }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', sans-serif;
     background-color: #f4f7fc;
     display: flex;
     justify-content: center;
@@ -23,6 +23,13 @@
     width: 100%;
     max-width: 400px;
     text-align: center;
+  }
+
+  .website-header {
+    font-size: 50px;
+    color: #000000; 
+    margin-bottom: 30px;
+    font-weight: bold;
   }
   
   h2 {
