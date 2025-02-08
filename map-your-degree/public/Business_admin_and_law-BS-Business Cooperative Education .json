@@ -1,0 +1,474 @@
+[
+    {
+        "Course Code": "BUSN\u00a01102",
+        "Course Name": "Personal Skill Development for Business",
+        "Course Hours": "1",
+        "Requirement Group": "Foundational Courses",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "BUSN\u00a01103",
+        "Course Name": "Professional Development for Business Co-op",
+        "Course Hours": "1",
+        "Requirement Group": "Foundational Courses",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "ACCT\u00a01201",
+        "Course Name": "Financial Accounting and Reporting",
+        "Course Hours": "4",
+        "Requirement Group": "Required Courses",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "ACCT\u00a02301",
+        "Course Name": "Profit Analysis for Managers and Advisors",
+        "Course Hours": "4",
+        "Requirement Group": "Required Courses",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "FINA\u00a02201",
+        "Course Name": "Financial Management",
+        "Course Hours": "4",
+        "Requirement Group": "Required Courses",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "INTB\u00a01203",
+        "Course Name": "International Business and Global Social Responsibility",
+        "Course Hours": "4",
+        "Requirement Group": "Required Courses",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "MGSC\u00a02301",
+        "Course Name": "Business Statistics",
+        "Course Hours": "4",
+        "Requirement Group": "Required Courses",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "ORGB\u00a03201",
+        "Course Name": "Organizational Behavior",
+        "Course Hours": "4",
+        "Requirement Group": "Required Courses",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "STRT\u00a04501",
+        "Course Name": "Strategy in Action",
+        "Course Hours": "4",
+        "Requirement Group": "Required Courses",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "INNO\u00a02301",
+        "Course Name": "Innovation!",
+        "Course Hours": "",
+        "Requirement Group": "Business Elective",
+        "Number Required": "one",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "MISM\u00a02301",
+        "Course Name": "Introduction to Information Systems and Digital Technologies",
+        "Course Hours": "",
+        "Requirement Group": "Business Elective",
+        "Number Required": "one",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "MKTG\u00a02201",
+        "Course Name": "Introduction to Marketing",
+        "Course Hours": "",
+        "Requirement Group": "Business Elective",
+        "Number Required": "one",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "SCHM\u00a02301",
+        "Course Name": "Supply Chain and Operations Management",
+        "Course Hours": "",
+        "Requirement Group": "Business Elective",
+        "Number Required": "one",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "ECON\u00a01115",
+        "Course Name": "Principles of Macroeconomics",
+        "Course Hours": "4",
+        "Requirement Group": "Default",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "or\u00a0ECON\u00a01116",
+        "Course Name": "Principles of Microeconomics",
+        "Course Hours": "",
+        "Requirement Group": "Default",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "MATH\u00a01231",
+        "Course Name": "Calculus for Business and Economics",
+        "Course Hours": "4",
+        "Requirement Group": "Default",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "or\u00a0MATH\u00a01341",
+        "Course Name": "Calculus 1 for Science and Engineering",
+        "Course Hours": "",
+        "Requirement Group": "Default",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "or\u00a0MATH\u00a01241",
+        "Course Name": "Calculus 1",
+        "Course Hours": "",
+        "Requirement Group": "Default",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "or\u00a0MATH\u00a01251",
+        "Course Name": "Calculus and Differential Equations for Biology 1",
+        "Course Hours": "",
+        "Requirement Group": "Default",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "or\u00a0MATH\u00a01340",
+        "Course Name": "Intensive Calculus for Engineers",
+        "Course Hours": "",
+        "Requirement Group": "Default",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03101",
+        "Course Name": "Introduction to Legal Studies 1: Law and Legal Reasoning",
+        "Course Hours": "4",
+        "Requirement Group": "Core Requirements",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03102",
+        "Course Name": "Introduction to Legal Studies 2: Statutes and Regulations",
+        "Course Hours": "4",
+        "Requirement Group": "Core Requirements",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03130",
+        "Course Name": "Introduction to Negotiation and Advocacy",
+        "Course Hours": "4",
+        "Requirement Group": "Core Requirements",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03140",
+        "Course Name": "Data Regulation and Compliance",
+        "Course Hours": "4",
+        "Requirement Group": "Core Requirements",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03235",
+        "Course Name": "Issues in Law and Public Policy",
+        "Course Hours": "4",
+        "Requirement Group": "Core Requirements",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "Please consult with your advisor to select courses that support your choice of business concentration.",
+        "Course Name": "",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "Complete a total of 12 semester hours. If choosing a 3-semester-hour course, register for a 1-semester-hour course concurrently. No more than four 1-semester-hour courses may be applied to this requirement.",
+        "Course Name": "12",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03150",
+        "Course Name": "Introduction to Law and Organizational Management",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03160",
+        "Course Name": "Introduction to International Regulations and Business Strategies",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03170",
+        "Course Name": "Introduction to Financial Transactions",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03181",
+        "Course Name": "Introduction to Healthcare Compliance",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03182",
+        "Course Name": "Introduction to Patient Records, Privacy, Security",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03210",
+        "Course Name": "Introduction to Employee Rights and Employer Obligations",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03211",
+        "Course Name": "Introduction to Antidiscrimination Law",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03212",
+        "Course Name": "Introduction to Wages and Benefits",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03232",
+        "Course Name": "Introduction to Intellectual Property and Media",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03236",
+        "Course Name": "Introduction to Contract Drafting",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03238",
+        "Course Name": "Introduction to Global Regulation of Artificial Intelligence",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03239",
+        "Course Name": "Introduction to Sports Law, Business, and Society",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03320",
+        "Course Name": "Introduction to Intellectual Property",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03321",
+        "Course Name": "Introduction to Identifying and Securing Intellectual Property Rights",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03800",
+        "Course Name": "Reflections on Law",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03801",
+        "Course Name": "Writing on Legal issues",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a04369",
+        "Course Name": "Advanced Intellectual Property",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a04501",
+        "Course Name": "Patent Law and Practice",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a04525",
+        "Course Name": "Law and Economic Development",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a04600",
+        "Course Name": "Issues in Health Law and Policy",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a04640",
+        "Course Name": "Issues in Information Security Law",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a04664",
+        "Course Name": "Law and Inequality",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a04681",
+        "Course Name": "Issues in Law and Biotechnology",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a04983",
+        "Course Name": "Special Topics in Law",
+        "Course Hours": "",
+        "Requirement Group": "Electives",
+        "Number Required": "a",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "ACCT\u00a03304",
+        "Course Name": "Business Law and Professional Ethics",
+        "Course Hours": "4",
+        "Requirement Group": "Business",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "or\u00a0FINA\u00a04312",
+        "Course Name": "Issues in Corporate Governance",
+        "Course Hours": "",
+        "Requirement Group": "Business",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "or\u00a0MGMT\u00a03420",
+        "Course Name": "Managing Human Capital",
+        "Course Hours": "",
+        "Requirement Group": "Business",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "LAW\u00a03120",
+        "Course Name": "Introduction to Law and Strategy",
+        "Course Hours": "4",
+        "Requirement Group": "Law",
+        "Number Required": "All",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "COOP\u00a03945",
+        "Course Name": "Co-op Work Experience",
+        "Course Hours": "",
+        "Requirement Group": "Default1",
+        "Number Required": "one",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "or\u00a0COOP\u00a03946",
+        "Course Name": "Co-op Work Experience--Half Time",
+        "Course Hours": "",
+        "Requirement Group": "Default1",
+        "Number Required": "one",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "or\u00a0COOP\u00a03947",
+        "Course Name": "Co-op Work Experience Abroad--Half Time",
+        "Course Hours": "",
+        "Requirement Group": "Default1",
+        "Number Required": "one",
+        "Enrolled": false
+    },
+    {
+        "Course Code": "or\u00a0COOP\u00a03948",
+        "Course Name": "Co-op Work Experience Abroad",
+        "Course Hours": "",
+        "Requirement Group": "Default1",
+        "Number Required": "one",
+        "Enrolled": false
+    }
+]

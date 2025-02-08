@@ -1,0 +1,11 @@
+Course Code,Course Name,Course Hours,Requirement Group,Number Required,Enrolled
+CS 2800,Logic and Computation,4,Default,All,False
+or CS 4820,Computer-Aided Reasoning,,Default,All,False
+CS 4805,Fundamentals of Complexity Theory,4,Default,All,False
+or CS 4810,Advanced Algorithms,,Default,All,False
+CS 3950and CS 4950,Introduction to Computer Science Researchand Computer Science Research Seminar,,Default1,two,False
+CS 4805,Fundamentals of Complexity Theory,,Default1,two,False
+CS 4810,Advanced Algorithms,,Default1,two,False
+CS 4820,Computer-Aided Reasoning,,Default1,two,False
+CS 4830,"System Specification, Verification, and Synthesis",,Default1,two,False
+CY 4770,Cryptography,,Default1,two,False
