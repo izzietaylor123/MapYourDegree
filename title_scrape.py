@@ -1,17 +1,22 @@
 import requests
 from bs4 import BeautifulSoup
-import csv
 
 def get_title(url):
-    # URL to scrape
-    url = "https://example.com"
-
     # Send HTTP request
     response = requests.get(url)
 
     # Parse HTML
     soup = BeautifulSoup(response.text, "html.parser")
 
-    # Extract and print the title
+    # Extract the full title
     title = soup.title.string
-    print("Website Title:", title)
+
+    # Split the title to get the first part ("Computer Science")
+    title_parts = title.split(",")
+    main_title = title_parts[0].strip()  # Remove any leading/trailing spaces
+
+    # Print the extracted title
+    print("Website Title:", main_title)
+
+# Pass the URL as an argument
+get_title("https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/#ARIN")
