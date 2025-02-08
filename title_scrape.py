@@ -16,7 +16,7 @@ def get_title(url):
     main_title = title_parts[0].strip()  # Remove any leading/trailing spaces
 
     # Print the extracted title
-    print("Website Title:", main_title)
+    return ("Website Title:", main_title)
 
 # Pass the URL as an argument
 get_title("https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/#ARIN")
