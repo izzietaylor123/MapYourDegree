@@ -113,7 +113,7 @@ def get_all_cip(url, school):
 
                 courses.append([academic_program, major_transcript_title, CIP])
         # Step 3: Save to CSV
-        csv_filename = f"NEUMajorRequirements/CIP-{school}.csv" 
+        csv_filename = f"CIP-{school}.csv" 
         with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
             csv_writer = csv.writer(csv_file)
             csv_writer.writerow(["Academic Program", "Major Transcript Title", "Major CIP Code"])

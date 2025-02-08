@@ -1,0 +1,134 @@
+Course Code,Course Name,Course Hours,Requirement Group,Number Required,Enrolled
+EDUC 1111,Education in the Community,,Educational Psychology,three,False
+EDUC 5503,"Culture, Equity, Power, and Influence",,Educational Psychology,three,False
+EDUC 5504,"Child and Adolescent Development, Learning, and Teaching",,Educational Psychology,three,False
+EDUC 5570,"Inclusion, Equity, and Diversity",,Educational Psychology,three,False
+ANTH 1101,Peoples and Cultures,,Society and Psychology,three,False
+ANTH 2302,Gender and Sexuality: A Cross-Cultural Perspective,,Society and Psychology,three,False
+ANTH 2315,Religion and Modernity,,Society and Psychology,three,False
+LING 3412,Language and Culture,,Society and Psychology,three,False
+SOCL 1255,Sociology of the Family,,Society and Psychology,three,False
+SOCL 1260,Sociology of Gender,,Society and Psychology,three,False
+SOCL 1295,Drugs and Society,,Society and Psychology,three,False
+CRIM 1120,Criminology,,Forensic Psychology,three,False
+CRIM 2320,Youth Crime and Justice,,Forensic Psychology,three,False
+CRIM 3110,"Gender, Crime, and Justice",,Forensic Psychology,three,False
+CRIM 3120,"Race, Crime, and Justice",,Forensic Psychology,three,False
+ANTH 1101,Peoples and Cultures,,Cross-Cultural Psychology,three,False
+LING 3412,Language and Culture,,Cross-Cultural Psychology,three,False
+LING 3442,Sociolinguistics,,Cross-Cultural Psychology,three,False
+ARTF 1210,Abstract Drawing 1,,Expressive Therapy,three,False
+MUSC 1118,Music Therapy 1,,Expressive Therapy,three,False
+THTR 1130,Introduction to Acting,,Expressive Therapy,three,False
+Complete one of the following courses or course combinations concurrently with ARTF 1210:,,,Expressive Therapy,one,False
+ARTF 1200,Representational Drawing,,Expressive Therapy,one,False
+ARTF 1220,Elements of Visual Composition (with optional ARTF 1221),,Expressive Therapy,one,False
+ARTF 1230and ARTF 1231,Making with Form and Materialsand Making with Form and Materials Tools,,Expressive Therapy,one,False
+ARTF 1240and ARTF 1241,"Making with Video, Sound, and Animationand Making with Video, Sound, and Animation Tools",,Expressive Therapy,one,False
+ARTF 1250and ARTF 1251,Designing Interactive Experiencesand Designing Interactive Experiences Tools,,Expressive Therapy,one,False
+CAEP 3480,Counseling Theories and Practice,,Counseling and Applied Psychology,one,False
+CAEP 3485,Mental Health and Counseling,,Counseling and Applied Psychology,one,False
+HUSV 2300,Counseling in Human Services,,Counseling and Applied Psychology,one,False
+HUSV 3520,Child Intervention and Treatment,,Counseling and Applied Psychology,one,False
+CS 3800,Theory of Computation,,Artificial Intelligence and Information Science,one,False
+CS 4100,Artificial Intelligence,,Artificial Intelligence and Information Science,one,False
+CS 4120,Natural Language Processing,,Artificial Intelligence and Information Science,one,False
+IS 2000,Principles of Information Science,,Artificial Intelligence and Information Science,one,False
+IS 4300,Human Computer Interaction,,Artificial Intelligence and Information Science,one,False
+DEAF 2700,ASL Linguistics,,Language,one,False
+LING 2350,Linguistic Analysis,,Language,one,False
+LING 3412,Language and Culture,,Language,one,False
+LING 3422,Phonology,,Language,one,False
+LING 3442,Sociolinguistics,,Language,one,False
+LING 3450,Syntax,,Language,one,False
+LING 3452,Semantics,,Language,one,False
+LING 3456,Language and Gender,,Language,one,False
+SLPA 1205,Speech and Hearing Science,,Language,one,False
+IS 2000,Principles of Information Science,,Human Factors,one,False
+IS 3500,Information System Design and Development,,Human Factors,one,False
+IS 4200,Information Retrieval,,Human Factors,one,False
+IS 4300,Human Computer Interaction,,Human Factors,one,False
+IS 4800,Empirical Research Methods,,Human Factors,one,False
+CRIM 2320,Youth Crime and Justice,,Child and Adolescent Abnormal Psychology,one,False
+HUSV 3520,Child Intervention and Treatment,,Child and Adolescent Abnormal Psychology,one,False
+SOCL 1295,Drugs and Society,,Child and Adolescent Abnormal Psychology,one,False
+INTB 3310,Cultural Aspects of International Business,,Human Resource Management and Business,one,False
+MISM 2301,Introduction to Information Systems and Digital Technologies,,Human Resource Management and Business,one,False
+MKTG 2209,Introduction to Marketing,,Human Resource Management and Business,one,False
+ORGB 3201,Organizational Behavior,,Human Resource Management and Business,one,False
+PHIL 1170,"Business, Ethics, and Human Rights",,Human Resource Management and Business,one,False
+SOCL 1280,The Twenty-First-Century Workplace,,Human Resource Management and Business,one,False
+PHIL 1105,Science and Pseudoscience,,Philosophy of Science and Psychology,one,False
+PHIL 1115,Introduction to Logic,,Philosophy of Science and Psychology,one,False
+PHIL 4510,Philosophy of Science,,Philosophy of Science and Psychology,one,False
+PHIL 4535,Philosophy of Mind,,Philosophy of Science and Psychology,one,False
+PHIL 1130,Comparative Ethics,,Ethics,one,False
+PHIL 1165,Moral and Social Problems in Healthcare,,Ethics,one,False
+PHIL 1170,"Business, Ethics, and Human Rights",,Ethics,one,False
+PHIL 1180,Environmental Ethics,,Ethics,one,False
+PHIL 3435,Moral Philosophy,,Ethics,one,False
+BIOL 1111and BIOL 1112,General Biology 1and Lab for BIOL 1111,,Biological and Chemical Sciences,one,False
+BIOL 1113and BIOL 1114,General Biology 2and Lab for BIOL 1113,,Biological and Chemical Sciences,one,False
+BIOL 1141,Microbes and Society,,Biological and Chemical Sciences,one,False
+BIOL 1147,The Human Organism,,Biological and Chemical Sciences,one,False
+BIOL 1149,Biology of Human Reproduction,,Biological and Chemical Sciences,one,False
+BIOL 2217and BIOL 2218,Integrated Anatomy and Physiology 1and Lab for BIOL 2217,,Biological and Chemical Sciences,one,False
+BIOL 2219and BIOL 2220,Integrated Anatomy and Physiology 2and Lab for BIOL 2219,,Biological and Chemical Sciences,one,False
+BIOL 3405,Neurobiology,,Biological and Chemical Sciences,one,False
+BIOL 5585,Evolution,,Biological and Chemical Sciences,one,False
+CHEM 1101and CHEM 1102,General Chemistry for Health Sciencesand Lab for CHEM 1101,,Biological and Chemical Sciences,one,False
+CHEM 1161and CHEM 1162,General Chemistry for Science Majorsand Lab for CHEM 1161,,Biological and Chemical Sciences,one,False
+CHEM 1211and CHEM 1212,General Chemistry 1and Lab for CHEM 1211,,Biological and Chemical Sciences,one,False
+CHEM 1214and CHEM 1215,General Chemistry 2and Lab for CHEM 1214,,Biological and Chemical Sciences,one,False
+EEMB 2302,Ecology,,Biological and Chemical Sciences,one,False
+"In addition to the following courses, any math skill course may be used with advisor approval:",,,Physical Sciences and Mathematics,one,False
+ENVR 1101,Environmental Science,,Physical Sciences and Mathematics,one,False
+ENVR 1110,Global Climate Change,,Physical Sciences and Mathematics,one,False
+ENVR 1200,Dynamic Earth,,Physical Sciences and Mathematics,one,False
+ENVR 2200,Earth's Changing Cycles,,Physical Sciences and Mathematics,one,False
+ENVR 3418,Geophysics,,Physical Sciences and Mathematics,one,False
+MATH 4581,Statistics and Stochastic Processes,,Physical Sciences and Mathematics,one,False
+or any PHYS course,,,Physical Sciences and Mathematics,one,False
+BIOL 1141,Microbes and Society,,Health and Wellness,one,False
+BIOL 1143,Biology and Society,,Health and Wellness,one,False
+BIOL 1147,The Human Organism,,Health and Wellness,one,False
+BIOL 1149,Biology of Human Reproduction,,Health and Wellness,one,False
+BIOL 2217and BIOL 2218,Integrated Anatomy and Physiology 1and Lab for BIOL 2217,,Health and Wellness,one,False
+COMM 3201,Health Communication,,Health and Wellness,one,False
+HSCI 1105,Human Nutrition,,Health and Wellness,one,False
+HSCI 1106,Contemporary Issues in Nutrition,,Health and Wellness,one,False
+NRSG 1205,Wellness,,Health and Wellness,one,False
+PHIL 1165,Moral and Social Problems in Healthcare,,Health and Wellness,one,False
+PHIL 1180,Environmental Ethics,,Health and Wellness,one,False
+PHIL 1185,The Ethics of Food,,Health and Wellness,one,False
+PT 1880,Introduction to Sports Medicine,,Health and Wellness,one,False
+SOCL 1295,Drugs and Society,,Health and Wellness,one,False
+COMM 1131,"Sex, Relationships, and Communication",,"Communication, Culture, and Society",one,False
+COMM 1255,Communication in a Digital Age,,"Communication, Culture, and Society",one,False
+COMM 2105,Social Networks,,"Communication, Culture, and Society",one,False
+COMM 2304,Communication and Gender,,"Communication, Culture, and Society",one,False
+COMM 2551,Free Speech in Cyberspace,,"Communication, Culture, and Society",one,False
+COMM 3230,Interpersonal Communication,,"Communication, Culture, and Society",one,False
+COMM 3304,Communication and Inclusion,,"Communication, Culture, and Society",one,False
+COMM 4535,Nonverbal Social Interaction,,"Communication, Culture, and Society",one,False
+COMM 4605,Youth and Communication Technology,,"Communication, Culture, and Society",one,False
+COMM 4625,Online Communities,,"Communication, Culture, and Society",one,False
+LING 3412,Language and Culture,,"Communication, Culture, and Society",one,False
+LING 3442,Sociolinguistics,,"Communication, Culture, and Society",one,False
+LING 3456,Language and Gender,,"Communication, Culture, and Society",one,False
+HUSV 1101,Social Change and Human Services,,Social Work Track,one,False
+HUSV 2355,"Race, Identity, Social Change, and Empowerment",,Social Work Track,one,False
+HUSV 2970,Research Methods for Human Services,,Social Work Track,one,False
+HUSV 3900,Social Policy,,Social Work Track,one,False
+CAEP 1280,Introduction to Mindfulness,,Mindfulness,one,False
+CAEP 1290,Personal Behavior Change,,Mindfulness,one,False
+CAEP 2280,"The Yoga Tradition in Nepal: Philosophy, Methods, and Practice",,Mindfulness,one,False
+CAEP 2290,"The Yoga Tradition: Philosophy, Methods, and Practice",,Mindfulness,one,False
+CAEP 3899,Relationships in College,,Mindfulness,one,False
+HLTH 5002,Mindfulness: Theory and Practice,,Mindfulness,one,False
+HUSV 2340,Mindfulness in Mental Health,,Mindfulness,one,False
+PHIL 1130,Comparative Ethics,,Mindfulness,one,False
+PHIL 1133,Selling Spirituality,,Mindfulness,one,False
+PHIL 1275,"Hinduism, Buddhism, and Beyond",,Mindfulness,one,False
+PHIL 1290,Chinese Philosophy and Religion,,Mindfulness,one,False
+PHIL 2395,Japanese Buddhism,,Mindfulness,one,False
