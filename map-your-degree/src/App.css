@@ -47,14 +47,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(255, 255, 255); /* Adjust based on your design */
-  z-index: 1000; /* Ensures it stays above other elements */
+  background-color: rgb(255, 255, 255); 
+  z-index: 1000; 
   padding: 10px 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow effect */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-/* Ensures the content starts below the fixed header */
+
 .content {
-  margin-top: 100px; /* Adjust based on header height */
+  margin-top: 100px; 
+}
+
+.logo-wrapper {
+  position: fixed; 
+  top: 20px; 
+  right: 20px; 
+  z-index: 1000; 
 }
 
