@@ -65,7 +65,7 @@ st.markdown(
         margin-bottom: 1.5rem; /* Moves button up */
     }
 
-    /* Button Styling inside the scroll */
+    /* Button Styling over the scroll */
     .styled-button {
         background-color: #4CAF50;
         color: white;
@@ -77,9 +77,10 @@ st.markdown(
         cursor: pointer;
         transition: all 0.3s ease;
         position: absolute;
-        bottom: 30px; /* Button positioned inside scroll */
+        top: 20px; /* Button positioned on top of the scroll */
         left: 50%;
         transform: translateX(-50%);
+        z-index: 1; /* Ensure button is above the scroll */
     }
 
     .styled-button:hover {
@@ -93,18 +94,17 @@ st.markdown(
 # Title at the top
 st.markdown('<h1 class="title-text">Map Your Degree</h1>', unsafe_allow_html=True)
 
-# Scroll container with button inside it
+# Scroll container with the button layered on top
 st.markdown("""
     <div class="scroll-wrapper">
         <div class="scroll-container">
             <p class="scroll-text">
                 This is your official degree scroll! 🎓📜
             </p>
-            <!-- The Streamlit button is inside the scroll container -->
         </div>
     </div>
 """, unsafe_allow_html=True)
 
-# Button inside the scroll (Streamlit button functionality)
+# Streamlit button (positioned on top of the scroll)
 if st.button("Plan Your Degree", key="plan_degree", use_container_width=True):
     st.switch_page("pages/enter_degree.py")
