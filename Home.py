@@ -72,7 +72,7 @@ st.markdown(
 
     /* Button Styling inside the scroll */
     .styled-button {
-        background-color: #4CAF50;
+        background-color: #800020;
         color: white;
         font-size: 18px;
         font-weight: bold;
@@ -105,7 +105,6 @@ st.markdown("""
             <p class="scroll-text">
                 This is your official degree scroll! 🎓📜
             </p>
-            <!-- The Streamlit button is inside the scroll container -->
         </div>
     </div>
 """, unsafe_allow_html=True)
