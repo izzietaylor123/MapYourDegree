@@ -15,7 +15,7 @@ def HomeNav():
 
 def SideBarLinks():
 
-    st.sidebar.image("logo.jpeg", width=150)
+    st.sidebar.image("logo_no_bg.png", width=150)
 
 
     HomeNav()
