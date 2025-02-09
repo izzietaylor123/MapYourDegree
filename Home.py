@@ -69,33 +69,9 @@ st.markdown(
         max-width: 80%;
         margin-bottom: 1.5rem; /* Moves button up */
     }
-
-    /* Button Styling inside the scroll */
-    .styled-button {
-        background-color: #800020;
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 12px 25px;
-        border-radius: 8px;
-        border: none;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: absolute;
-        bottom: 30px; /* Button positioned inside scroll */
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .styled-button:hover {
-        background-color: #800000;
-        transform: scale(1.05);
-    }
-
     </style>
     """, unsafe_allow_html=True)
 
-# Title at the top
 st.markdown('<h1 class="title-text">Map Your Degree</h1>', unsafe_allow_html=True)
 
 # Scroll container with button inside it
@@ -103,7 +79,9 @@ st.markdown("""
     <div class="scroll-wrapper">
         <div class="scroll-container">
             <p class="scroll-text">
-                This is your official degree scroll! 🎓📜
+                This is your official degree scroll! 
+            Click the button below to begin roadmapping your degree! 
+            Happy Auditing!🎓📜
             </p>
         </div>
     </div>

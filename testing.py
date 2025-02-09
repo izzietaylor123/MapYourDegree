@@ -1,5 +1,10 @@
 import streamlit as st
 
+from app.nav import SideBarLinks
+st.session_state['url_validated'] = False
+
+SideBarLinks()
+
 # Custom CSS for styling
 st.markdown(
     """
@@ -65,36 +70,41 @@ st.markdown(
         margin-bottom: 1.5rem; /* Moves button up */
     }
 
-    /* Button Styling over the scroll */
     .styled-button {
-        background-color: #4CAF50;
+        background-color: #800020;
         color: white;
         font-size: 18px;
         font-weight: bold;
-        padding: 12px 25px;
-        border-radius: 8px;
+        padding: 14px 28px; /* Increased padding for a better look */
+        border-radius: 12px; /* Rounded corners */
         border: none;
         cursor: pointer;
         transition: all 0.3s ease;
         position: absolute;
-        top: 20px; /* Button positioned on top of the scroll */
+        bottom: 30px; /* Button positioned inside scroll */
         left: 50%;
         transform: translateX(-50%);
-        z-index: 1; /* Ensure button is above the scroll */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     }
+
 
     .styled-button:hover {
         background-color: #800000;
         transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+    }
+
+    .styled-button:active {
+        background-color: #660000;
+        transform: scale(1.02); /* Slightly smaller when clicked */
     }
 
     </style>
     """, unsafe_allow_html=True)
 
-# Title at the top
 st.markdown('<h1 class="title-text">Map Your Degree</h1>', unsafe_allow_html=True)
 
-# Scroll container with the button layered on top
+# Scroll container with button inside it
 st.markdown("""
     <div class="scroll-wrapper">
         <div class="scroll-container">
@@ -105,6 +115,6 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# Streamlit button (positioned on top of the scroll)
+# Button inside the scroll (Streamlit button functionality)
 if st.button("Plan Your Degree", key="plan_degree", use_container_width=True):
     st.switch_page("pages/enter_degree.py")
