@@ -8,7 +8,7 @@ st.markdown(
         font-weight: bold;
         text-align: center;
         color: #800000;
-        font-family: 'Indie Flower', cursive;
+        font-family: 'Great Vibes', cursive;
     }
     
     .button-container {
@@ -35,7 +35,10 @@ st.markdown(
     </style>
     """, unsafe_allow_html=True)
 
+image_path = "./logo.jpeg"
+
 st.markdown('<div class="title">Map Your Degree</div>', unsafe_allow_html=True)
+st.image(image_path, width=150)
 
 with st.container():
     st.markdown('<div class="button-container">', unsafe_allow_html=True)
