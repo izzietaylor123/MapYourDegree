@@ -37,8 +37,6 @@ for file in csv_list:
         filepath = f"{file}"
         df = pd.read_csv(filepath)
 
-
-
         reqs_df = pd.read_csv(filepath)
 
         st.write(f"**{name}**")
