@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 import requests
 from bs4 import BeautifulSoup
 import csv
+from app.nav import SideBarLinks
+
+SideBarLinks()
 
 word_to_number = {
 "zero": 0, "one": 1, "two": 2, "three": 3, "four": 4,

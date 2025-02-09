@@ -1,5 +1,10 @@
 import streamlit as st
 
+from app.nav import SideBarLinks
+st.session_state['url_validated'] = False
+
+SideBarLinks()
+
 st.markdown(
     """
     <style>
