@@ -80,7 +80,7 @@ def get_courses(url, major, degree):
         csv_filename = f"{major}-{degree}-{title}.csv" 
         with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
             csv_writer = csv.writer(csv_file)
-            csv_writer.writerow(["Course Code", "Course Name", "Course Hours", "Requirement Group", "Number Required", "Enrolled"])
+            csv_writer.writerow(["Course Code", "Course Name", "Course Hours", "Requirement Group", "Number Required", "Taken?"])
             csv_writer.writerows(courses)
         print(f"✅ Data written to {csv_filename}")
 

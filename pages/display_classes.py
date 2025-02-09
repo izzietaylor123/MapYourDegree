@@ -142,8 +142,9 @@ if len(concentrations) > 0:
 
             fig, ax = plt.subplots()
             colors = ["#A52A2A", "#660000"]  # Light red, blue, green, and orange
+            fig.set_facecolor('#f7c3c3')
 
-            ax.pie(all_req, labels=labels, colors=colors,autopct="%1.1f%%", startangle=90)
+            ax.pie(all_req, labels=labels, colors=colors,autopct="%1.1f%%", startangle=90, textprops={'color': 'white'})
             ax.axis("equal")  # Equal aspect ratio ensures pie is drawn as a circle.
 
             st.pyplot(fig)

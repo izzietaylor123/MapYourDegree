@@ -13,9 +13,8 @@ SideBarLinks()
 st.session_state['url_validated'] = False
 
 st.title("See Your Degree Track!")
-st.write("Please input your major url to continue.")
 
-url = st.text_input("Degree URL").strip()
+url = st.text_input("Enter the URL to your degree's requirements").strip()
 degree = ""
 
 if url:
