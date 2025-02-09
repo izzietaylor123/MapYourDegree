@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+    
 def get_title(url):
     # Send HTTP request
     response = requests.get(url)
@@ -11,16 +12,13 @@ def get_title(url):
     # Extract the full title
     title = soup.title.string
 
-    # Split the title at the comma to get "Computer Science" and "BSCS"
-    title_parts = title.split(",")
-    
-    # Extract "Computer Science" and change "BSCS" to "BACS"
-    main_title = title_parts[0].strip()  # "Computer Science"
-    degree = title_parts[1].split()[0].strip()  # Extracts "BSCS" (or equivalent)
-    
+    # Split the title to get the first part ("Computer Science")
+    title_parts = title.split("<")
+    main_title = title_parts[0].strip()  # Remove any leading/trailing spaces
 
-    # Print the extracted title
-    return ("Website Title:", main_title)
+
+    # return the extracted title
+    return (main_title)
 
 # Pass the URL as an argument
 get_title("https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/#ARIN")

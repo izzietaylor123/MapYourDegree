@@ -5,28 +5,8 @@ import requests
 from bs4 import BeautifulSoup
 
 from app.nav import SideBarLinks
-
+from app.title_scrape import get_title
 SideBarLinks()
-
-def get_title(url):
-    # Send HTTP request
-    response = requests.get(url)
-
-    # Parse HTML
-    soup = BeautifulSoup(response.text, "html.parser")
-
-    # Extract the full title
-    title = soup.title.string
-
-    # Split the title to get the first part ("Computer Science")
-    title_parts = title.split("<")
-    main_title = title_parts[0].strip()  # Remove any leading/trailing spaces
-
-    # Print the extracted title
-    print(main_title)
-
-    # Print the extracted title
-    return (main_title)
 
 st.session_state['url_validated'] = False
 
