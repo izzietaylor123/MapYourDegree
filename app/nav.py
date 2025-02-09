@@ -7,7 +7,7 @@ def Search():
 
 
 def AboutPageNav():
-    st.sidebar.page_link("pages/about.py", label="About Map Your Degree", icon="🧠")
+    st.sidebar.page_link("pages/about.py", label="About Map Your Degree", icon="🗺️")
 
 def HomeNav():
     st.sidebar.page_link("Home.py", label="Home", icon="🏠")
@@ -20,6 +20,10 @@ def SideBarLinks():
 
     HomeNav()
 
+    if 'url_validated' not in st.session_state:
+        st.session_state['url_validated'] = False
+
+  
     if st.session_state['url_validated'] == True:
         Search()
 

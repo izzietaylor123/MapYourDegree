@@ -84,3 +84,6 @@ st.markdown("""
         </div>
     </div>
 """, unsafe_allow_html=True)
+
+if st.button("Meet the Team", use_container_width = True):
+    st.switch_page('pages/meet_creators.py')
