@@ -90,3 +90,9 @@ st.markdown("""
 # Button inside the scroll (Streamlit button functionality)
 if st.button("Plan Your Degree", key="plan_degree", use_container_width=True):
     st.switch_page("pages/enter_degree.py")
+
+# Video path (adjust if necessary)
+video_path = "ca.mp4"  # Ensure the path is correct
+
+# Streamlit video player with autoplay and muted, no loop here directly
+st.video(video_path, start_time=0)
