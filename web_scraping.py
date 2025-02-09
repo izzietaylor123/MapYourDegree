@@ -2,11 +2,15 @@ import requests
 from bs4 import BeautifulSoup 
 import csv
 
+from requests.exceptions import RequestException, ConnectionError, Timeout, MissingSchema
+
+
 def get_courses(url, major, degree):
 
     # Step 1: Fetch the catalog page
     url = f"{url}"
     response = requests.get(url)
+    
     soup = BeautifulSoup(response.content, "html.parser")
     
     csv_list = []
