@@ -1,5 +1,7 @@
 # MapYourDegree — Built for HackBeanPot2025
 
+[View our presentation and demo here!](https://view.genially.com/67a80583b17580f5901fc29d/interactive-content-hackbeanpot)
+
 ## What is Map Your Degree?
 ### Inspiration:
 
