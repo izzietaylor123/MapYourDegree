@@ -3,6 +3,8 @@ import streamlit as st
 st.markdown(
     """
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
     .image-container {
         position: absolute;
         top: 10px;
@@ -15,7 +17,7 @@ st.markdown(
         font-weight: bold;
         text-align: center;
         color: #000000;
-        font-family: 'Merriweather', serif;
+        font-family: 'Abril Fatface', serif;
     }
     
     .button-container {
