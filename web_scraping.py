@@ -9,6 +9,7 @@ def get_courses(url, major, degree):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
     
+    csv_list = []
     
     # Step 2: Find all tbody elements
 
@@ -83,6 +84,9 @@ def get_courses(url, major, degree):
             csv_writer.writerow(["Course Code", "Course Name", "Course Hours", "Requirement Group", "Number Required", "Enrolled"])
             csv_writer.writerows(courses)
         print(f"✅ Data written to {csv_filename}")
+        csv_list += [f"{csv_filename}"]
+    return csv_list
+
 
 def get_all_cip(url, school):
     url = f"{url}"
