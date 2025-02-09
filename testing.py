@@ -1,5 +1,6 @@
 import streamlit as st
 
+# Custom CSS for styling
 st.markdown(
     """
     <style>
@@ -32,6 +33,7 @@ st.markdown(
         justify-content: center;
         align-items: center;
         width: 100%;
+        flex-direction: column; /* Stacks button and scroll vertically */
     }
 
     .scroll-container {
@@ -48,31 +50,9 @@ st.markdown(
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; /* Perfectly centers everything inside */
+        justify-content: center;
         position: relative;
         overflow: hidden;
-    }
-
-    /* Rolled edges */
-    .scroll-container::before,
-    .scroll-container::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        width: 200%;
-        height: 60px;
-        background: linear-gradient(to bottom, #d2b48c, #F5F5DC);
-        border-radius: 50%;
-        transform: translateX(-50%);
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .scroll-container::before {
-        top: -40px;
-    }
-
-    .scroll-container::after {
-        bottom: -40px;
     }
 
     /* Scroll text */
@@ -85,7 +65,7 @@ st.markdown(
         margin-bottom: 1.5rem; /* Moves button up */
     }
 
-    /* Button Styling */
+    /* Button Styling inside the scroll */
     .styled-button {
         background-color: #4CAF50;
         color: white;
@@ -96,30 +76,35 @@ st.markdown(
         border: none;
         cursor: pointer;
         transition: all 0.3s ease;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        bottom: 30px; /* Button positioned inside scroll */
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .styled-button:hover {
         background-color: #800000;
         transform: scale(1.05);
     }
-    
+
     </style>
     """, unsafe_allow_html=True)
 
+# Title at the top
 st.markdown('<h1 class="title-text">Map Your Degree</h1>', unsafe_allow_html=True)
 
-# Scroll container with the button inside it
+# Scroll container with button inside it
 st.markdown("""
     <div class="scroll-wrapper">
         <div class="scroll-container">
             <p class="scroll-text">
                 This is your official degree scroll! 🎓📜
             </p>
+            <!-- The Streamlit button is inside the scroll container -->
         </div>
     </div>
 """, unsafe_allow_html=True)
 
-# Centered button inside the scroll
+# Button inside the scroll (Streamlit button functionality)
 if st.button("Plan Your Degree", key="plan_degree", use_container_width=True):
     st.switch_page("pages/enter_degree.py")
