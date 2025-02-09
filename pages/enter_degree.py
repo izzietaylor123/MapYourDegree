@@ -33,7 +33,7 @@ if url:
 
     degree = get_title(url)
 
-    st.write(f"**Is this your degree?** {degree}")
+    st.write(f"**Is this your degree?** :red[{degree}]")
 
     if st.button("Yes!"):
         st.session_state['degree'] = degree,

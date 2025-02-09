@@ -3,12 +3,19 @@ import streamlit as st
 st.markdown(
     """
     <style>
+    .image-container {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 100;
+    }
+
     .title {
         font-size: 50px;
         font-weight: bold;
         text-align: center;
-        color: #800000;
-        font-family: 'Dancing Script', cursive;
+        color: #000000;
+        font-family: 'Merriweather', serif;
     }
     
     .button-container {
@@ -30,12 +37,20 @@ st.markdown(
     }
 
     .styled-button:hover {
-        background-color: #45a049;
+        background-color: #800000;
     }
     </style>
     """, unsafe_allow_html=True)
 
-st.markdown('<div class="title">Map Your Degree</div>', unsafe_allow_html=True)
+image_path = "./logo.jpeg"
+
+col1, col2 = st.columns([0.5, 4])  # Adjust column width to control image positioning
+
+with col1:
+    st.image(image_path, width=100)
+
+with col2:
+    st.markdown('<div class="title">Map Your Degree</div>', unsafe_allow_html=True)
 
 with st.container():
     st.markdown('<div class="button-container">', unsafe_allow_html=True)
