@@ -17,5 +17,6 @@ showSidebarNavigation = false
 base="light"
 primaryColor="#f54949"
 backgroundColor="#850c0c" 
+text_color="#f7c3c3"
 
 font="monospace"

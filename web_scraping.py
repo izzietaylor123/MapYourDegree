@@ -124,5 +124,3 @@ def get_all_cip(url, school):
             csv_writer.writerows(courses)
         print(f"✅ Data written to {csv_filename}")
 
-get_all_cip('https://catalog.northeastern.edu/general-information/major-cip-codes/', 'northeastern')
-get_courses('https://catalog.northeastern.edu/undergraduate/business/business-administration-law-bs/#programrequirementstext', 'Business_admin_and_law', 'BS')
