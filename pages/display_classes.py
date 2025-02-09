@@ -21,7 +21,8 @@ degree = st.session_state['degree'][0]
 
 major_degree = degree.split(",")
 major = major_degree[0].strip()
-st.title(f"Course requirements for: :red[{major}]")
+st.title(f"Course requirements for: ***{degree}***")
+st.write("-----------------------------------------")
 major = major.replace(" ", "-")
 degree = major_degree[1].strip()
 
@@ -80,12 +81,12 @@ for file in csv_list:
             all_req = [pct_taken, 100-pct_taken]
             labels = ["Classes taken", "Classes left"]        
 
-            st.subheader(f"**Percent of :red[{name}] completed:**")
+            st.subheader(f"**Percent of ***{name}*** completed:**")
 
             fig, ax = plt.subplots()
             colors = ["#A52A2A", "#660000"]  # Light red, blue, green, and orange
-
-            ax.pie(all_req, labels=labels, colors=colors,autopct="%1.1f%%", startangle=90)
+            fig.set_facecolor('#f7c3c3')
+            ax.pie(all_req, labels=labels, colors=colors,autopct="%1.1f%%", startangle=90, textprops={'color': 'white'})
             ax.axis("equal")  # Equal aspect ratio ensures pie is drawn as a circle.
 
             st.pyplot(fig)
