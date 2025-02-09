@@ -7,7 +7,7 @@ from requests.exceptions import RequestException, ConnectionError, Timeout, Miss
 
 def get_courses(url, major, degree):
 
-    # Step 1: Fetch the catalog page
+    # Fetch the catalog page
     url = f"{url}"
     response = requests.get(url)
     
@@ -15,8 +15,6 @@ def get_courses(url, major, degree):
     
     csv_list = []
     
-    # Step 2: Find all tbody elements
-
     # Find all tables with the class "sc_courselist"
     tables = soup.find_all("table", class_="sc_courselist")
 
@@ -81,7 +79,7 @@ def get_courses(url, major, degree):
         title = "Core"
         if all_h3_elements:
             title = all_h3_elements[-1].text
-        # Step 3: Save to CSV
+        # save to CSV
         csv_filename = f"{major}-{degree}-{title}.csv" 
         with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
             csv_writer = csv.writer(csv_file)
@@ -98,9 +96,8 @@ def get_all_cip(url, school):
     soup = BeautifulSoup(response.content, "html.parser")
     
     
-    # Step 2: Find all tbody elements
 
-    # Find all tables with the class "sc_courselist"
+    # find all tables with the class "sc_courselist"
     tables = soup.find_all("table", class_="visible grid sc_majorciptable")
 
     for table in tables:
@@ -120,7 +117,7 @@ def get_all_cip(url, school):
                     CIP = CIP[14:].strip()
 
                 courses.append([academic_program, major_transcript_title, CIP])
-        # Step 3: Save to CSV
+        # save to CSV
         csv_filename = f"NEUMajorRequirements/CIP-{school}.csv" 
         with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
             csv_writer = csv.writer(csv_file)

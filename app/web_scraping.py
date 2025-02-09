@@ -4,14 +4,11 @@ import csv
 
 def get_courses(url, major, degree):
 
-    # Step 1: Fetch the catalog page
     url = f"{url}"
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
     
     
-    # Step 2: Find all tbody elements
-
     # Find all tables with the class "sc_courselist"
     tables = soup.find_all("table", class_="sc_courselist")
 
@@ -76,7 +73,7 @@ def get_courses(url, major, degree):
         title = "Core"
         if all_h3_elements:
             title = all_h3_elements[-1].text
-        # Step 3: Save to CSV
+        # Save to CSV
         csv_filename = f"{major}-{degree}-{title}.csv" 
         with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
             csv_writer = csv.writer(csv_file)
@@ -90,7 +87,6 @@ def get_all_cip(url, school):
     soup = BeautifulSoup(response.content, "html.parser")
     
     
-    # Step 2: Find all tbody elements
 
     # Find all tables with the class "sc_courselist"
     tables = soup.find_all("table", class_="visible grid sc_majorciptable")
