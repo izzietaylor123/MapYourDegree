@@ -21,7 +21,7 @@ degree = st.session_state['degree'][0]
 
 major_degree = degree.split(",")
 major = major_degree[0].strip()
-st.title(f"Course requirements for: {major}")
+st.title(f"Course requirements for: :red[{major}]")
 major = major.replace(" ", "-")
 degree = major_degree[1].strip()
 
