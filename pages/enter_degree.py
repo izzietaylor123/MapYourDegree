@@ -27,7 +27,7 @@ if url:
             st.error("We couldn't reach that URL... Try again?")
 
     if degree:
-        st.write(f"**Is this your degree?** :red[{degree}]")
+        st.subheader(f"**Is this your degree?** ***{degree}***")
 
         if st.button("Yes!"):
             st.session_state['url_validated'] = True

@@ -37,59 +37,59 @@ for file in csv_list:
         i += 1
         filepath = f"{file}"
         df = pd.read_csv(filepath)
+        if not df.empty:
+            reqs_df = pd.read_csv(filepath)
 
-        reqs_df = pd.read_csv(filepath)
+            st.write(f"**{name}**")
+            # Display editable checkbox column
+            edited_df = st.data_editor(
+                reqs_df,
+                column_config={
+                    "Completed": st.column_config.CheckboxColumn("Completed"),
+                },
+                use_container_width=True
+            )
 
-        st.write(f"**{name}**")
-        # Display editable checkbox column
-        edited_df = st.data_editor(
-            reqs_df,
-            column_config={
-                "Completed": st.column_config.CheckboxColumn("Completed"),
-            },
-            use_container_width=True
-        )
-
-        # Button to save changes
-        if st.button("Save Changes", key = i):
-            i += 1
-            num_required = 0
-            num_required_taken = 0
-            req_groups = {} # req_group : num required, satisfied
-            for row in edited_df.itertuples():
-                if row[5] == 'All':
-                    num_required += 1
-                    if row[6] == True:
-                        num_required_taken += 1
-                elif row[4] not in req_groups:
-                    req_groups[row[4]] = [parse_number(row[5]), False]
-                    num_required += parse_number(row[5])
-                    if row[6] == True:
-                        num_required_taken += 1
-                        req_groups[row[4]][0] -=1
-                        if req_groups[row[4]][0] == 0:
-                            req_groups[row[4]][1] = True
-                elif req_groups[row[4]][1] == False:
-                    if row[6] == True:
-                        num_required_taken += 1
-                        req_groups[row[4]][0] -=1
-                        if req_groups[row[4]][0] == 0:
-                            req_groups[row[4]][1] = True
+            # Button to save changes
+            if st.button("Save Changes", key = i):
+                i += 1
+                num_required = 0
+                num_required_taken = 0
+                req_groups = {} # req_group : num required, satisfied
+                for row in edited_df.itertuples():
+                    if row[5] == 'All':
+                        num_required += 1
+                        if row[6] == True:
+                            num_required_taken += 1
+                    elif row[4] not in req_groups:
+                        req_groups[row[4]] = [parse_number(row[5]), False]
+                        num_required += parse_number(row[5])
+                        if row[6] == True:
+                            num_required_taken += 1
+                            req_groups[row[4]][0] -=1
+                            if req_groups[row[4]][0] == 0:
+                                req_groups[row[4]][1] = True
+                    elif req_groups[row[4]][1] == False:
+                        if row[6] == True:
+                            num_required_taken += 1
+                            req_groups[row[4]][0] -=1
+                            if req_groups[row[4]][0] == 0:
+                                req_groups[row[4]][1] = True
 
 
-            pct_taken = (num_required_taken/num_required)*100
-            all_req = [pct_taken, 100-pct_taken]
-            labels = ["Classes taken", "Classes left"]        
+                pct_taken = (num_required_taken/num_required)*100
+                all_req = [pct_taken, 100-pct_taken]
+                labels = ["Classes taken", "Classes left"]        
 
-            st.subheader(f"**Percent of ***{name}*** completed:**")
+                st.subheader(f"**Percent of ***{name}*** completed:**")
 
-            fig, ax = plt.subplots()
-            colors = ["#A52A2A", "#660000"]  # Light red, blue, green, and orange
-            fig.set_facecolor('#f7c3c3')
-            ax.pie(all_req, labels=labels, colors=colors,autopct="%1.1f%%", startangle=90, textprops={'color': 'white'})
-            ax.axis("equal")  # Equal aspect ratio ensures pie is drawn as a circle.
+                fig, ax = plt.subplots()
+                colors = ["#A52A2A", "#660000"]  # Light red, blue, green, and orange
+                fig.set_facecolor('#f7c3c3')
+                ax.pie(all_req, labels=labels, colors=colors,autopct="%1.1f%%", startangle=90, textprops={'color': 'white'})
+                ax.axis("equal")  # Equal aspect ratio ensures pie is drawn as a circle.
 
-            st.pyplot(fig)
+                st.pyplot(fig)
 
 if len(concentrations) > 0:
     options = concentrations.keys()
@@ -138,7 +138,7 @@ if len(concentrations) > 0:
             pct_taken = (num_required_taken/num_required)*100
             all_req = [pct_taken, 100-pct_taken]
             labels = ["Classes taken", "Classes left"]       
-            st.subheader(f"**Percent of :red[{selection}] completed:**")
+            st.subheader(f"**Percent of ***{selection}*** completed:**")
 
             fig, ax = plt.subplots()
             colors = ["#A52A2A", "#660000"]  # Light red, blue, green, and orange
